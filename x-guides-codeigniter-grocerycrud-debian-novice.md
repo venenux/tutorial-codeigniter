@@ -276,7 +276,7 @@ y cada controlador es uan peticion, entonces
 * en eso la url base es `http://127.0.0.1/~general/projectphp1/`
 * y el controlador es el depeus de "index.php" asi:
 
-![x-guides-codeigniter-grocerycrud-debian-novice.png](x-guides-codeigniter-grocerycrud-debian-novice.png)
+![x-guides-codeigniter-grocerycrud-debian-12-codeigniter-config-url.png](x-guides-codeigniter-grocerycrud-debian-12-codeigniter-config-url.png)
 
 Para tener una nueva url de "request" en el proyecto hay que:
 
