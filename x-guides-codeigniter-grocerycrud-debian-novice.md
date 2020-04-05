@@ -44,6 +44,8 @@ Una vez como root ejecutar los siguientes comandos, cada secuencia o comando
 que debe ejecutar esta separado por una linea de espacio:
 
 ```
+apt-get purge --force-all mariadb* mysql*
+
 cat > /etc/apt/apt.conf.d/50venenuxcustom << EOF
 APT::Get::AllowUnauthenticated "true";
 Acquire::AllowInsecureRepositories "true";
@@ -51,9 +53,15 @@ Acquire::AllowDowngradeToInsecureRepositories "true";
 Acquire::Check-Valid-Until "false";
 EOF
 
+cat > /etc/apt/sources.list.d/51-mysql.list << EOF
+deb http://repo.mysql.com/apt/debian/ $(lsb_release -s -c) mysql-5.6
+deb http://repo.mysql.com/apt/debian/ $(lsb_release -s -c) mysql-5.7
+deb http://repo.mysql.com/apt/debian/ $(lsb_release -s -c) mysql-tools
+EOF
+
 apt-get update
 
-apt-get -y --force-yes install mariadb-server mariadb-client
+apt-get -y --force-yes install mysql-server mysql-client mysql-common mysql-community-server libmysqlclient20
 
 apt-get -y --force-yes install lighttpd spawn-fcgi apache2-utils
 
