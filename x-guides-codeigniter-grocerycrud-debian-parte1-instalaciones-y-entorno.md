@@ -1,3 +1,7 @@
+[![Awesome](https://awesome.re/badge-flat.svg)](https://venenux.github.io/tutorial-codeigniter/)
+[![Contribution%20Guide](https://img.shields.io/badge/-Contribution%20Guide-informational?style=flat)](contributing.md) 
+
+
 # Codeigniter en VenenuX Debian
 
 * [Forma de trabajo: MVC](#forma-de-trabajo--mvc)
