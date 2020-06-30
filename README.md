@@ -1,4 +1,5 @@
-https://venenux.github.io/tutorial-codeigniter/
+[![Awesome](https://awesome.re/badge-flat.svg)](https://venenux.github.io/tutorial-codeigniter/)
+[![Contribution%20Guide](https://img.shields.io/badge/-Contribution%20Guide-informational?style=flat)](contributing.md) 
 
 # Guia para gente comun de Codeigniter en español
 
